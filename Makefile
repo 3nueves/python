@@ -14,12 +14,12 @@ BINS := $(SRCS:%.c=%)
 all: ${BINS}
 
 %: %.o
-        @echo "Checking.."
-        ${CC} ${LINKERFLAG} $< -o $@
+	@echo "Checking.."
+	${CC} ${LINKERFLAG} $< -o $@
 
 %.o: %.c
-        @echo "Creating object.."
-        ${CC} -c $<
+	@echo "Creating object.."
+	${CC} -c $<
 
 clean:
 	@echo "Cleaning up..."
