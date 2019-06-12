@@ -1,2 +1,2 @@
 # python
-Severals exemples python with makefile
+Exemples python with makefile
